@@ -2,13 +2,66 @@
 <html>
 <head>
     <title>Beaute Concept</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href='./assets/favicon/favicon.ico' type='image/x-icon'>
-    <link rel="shortcut icon" href='./assets/favicon/favicon.ico' type='image/x-icon'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel='stylesheet' href='./style/style.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='icon' href='./assets/favicon/favicon.ico' type='image/x-icon'>
+    <link rel='shortcut icon' href='./assets/favicon/favicon.ico' type='image/x-icon'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
 </head>
 <body> 
-     <script src="./src/script.js"></script>
+    <main>
+        <header>
+            <div class='container'>
+                <nav>
+                    <button class='burger-menu' id='burgerMenuButton'>
+                        <i class="fa-solid fa-bars menu"></i>
+                        <i class="fa-solid fa-xmark crose"></i>
+                    </button>
+                    <ul>
+                        <li>
+                            <a href='#'>Needs</a>
+                        </li>
+                        <li>
+                            <a href='#'>Price List</a>
+                        </li>
+                        <li>
+                            <a href='#'>Treatments <i class='fa-solid fa-chevron-down'></i></a>
+                        </li>
+                        <li>
+                            <a href='#'>Surgical</a>
+                        </li>
+                        <li>
+                            <a href='#'>Dental</a>
+                        </li>
+                    </ul>
+
+                    <div class='logo'>
+                        <a href='#'><img src='./assets/logo/logo.svg' alt='Beaute Concept'/></a>
+                    </div>
+                </nav>
+                <div class='contact'>
+                    <a href='tel:+37444007171'>
+                        <span class='desktop-contact'><img src='./assets/images/phone.png' alt='+374 44 007171'/> +374 44 007171</span>
+                        <span class='mobile-contact'>Book Now</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class='hero'>
+            <div class='container'>
+                <p>Choose Your Appointment</p>
+                <form class='search-form'>
+                    <i class="fa-solid fa-magnifying-glass" id='searchIcon'></i>
+                    <input type='search' placeholder='Search...'/>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src='./src/script.js'></script>
+    <script src='./src/searchBar.js'></script>
+    <script src='./src/burgerMenu.js'></script>
 </body>
 </html>
