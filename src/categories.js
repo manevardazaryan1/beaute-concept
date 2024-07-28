@@ -21,7 +21,6 @@ function createSubCategories(button) {
     })
 }
 
-
 function createSubCategory(json, text) {
     let subCat = document.createElement('li')
     let span = document.createElement('span')
